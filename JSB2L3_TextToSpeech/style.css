@@ -1,0 +1,12 @@
+body{
+    background-color: #282828;
+    color: #d2a7b1;
+    font-weight: normal;
+    font-family: 'Iceberg';
+    font-size: 250%;
+}
+
+div::first-letter {
+    font-size: 150%;
+    color: #c1728f;
+  }
