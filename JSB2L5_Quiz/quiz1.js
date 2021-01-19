@@ -4,7 +4,7 @@ const quiz1 =
     "quizMetaData":
     {
         "title": "Lisser Art Museum",
-        "imageURI": "https://www.lamlisse.nl/wp-content/uploads/2018/03/LAM-Lisse-logo-white.svg"
+		"imageURI": "https://media2.giphy.com/media/dXW9mdBVehcCtbMqVI/giphy.gif"
 
     },
     "quizContent":		
@@ -107,11 +107,3 @@ const quiz1 =
 			}
 		]
 	}
-
-
-/*vragen voor de quiz
-6. 
-	a. 
-	b. 
-	c. W
-*/

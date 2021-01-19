@@ -83,8 +83,8 @@ function finishQuiz() {
   // afsluiting quiz geef feedback
   questionBox.style.display = "none";
   resultBox.style.display = "block";
-  quizWrapper.style.background = "silver";
-  resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+  quizWrapper.style.background = "pink";
+  resultBox.innerHTML = "<h2>Jouw resultaat: <br>Goede antwoorden: " + playerData.goodAnswers + "<br>Foute antwoorden: " + playerData.wrongAnswers + "</h2>";
 }
 
-init(); // start it
+init()
