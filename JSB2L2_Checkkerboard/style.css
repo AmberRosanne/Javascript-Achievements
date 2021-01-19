@@ -2,3 +2,23 @@
     border: 1px solid black;
     padding: 10px;
 }
+
+.black {
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    width: 60px;
+    height: 60px;
+}
+
+.white {
+    background-color: white;
+    color: black;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: normal;
+    width: 60px;
+    height: 60px;
+}
