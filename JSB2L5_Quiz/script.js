@@ -87,4 +87,4 @@ function finishQuiz() {
   resultBox.innerHTML = "<h2>Jouw resultaat: <br>Goede antwoorden: " + playerData.goodAnswers + "<br>Foute antwoorden: " + playerData.wrongAnswers + "</h2>";
 }
 
-init()
+init(); // start it
