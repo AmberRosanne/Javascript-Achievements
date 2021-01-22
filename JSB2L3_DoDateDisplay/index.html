@@ -1,26 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Huidige Datum</title>
     <script>
-        function toonDatum(){
-            let[01, 22, 2021] = new Date().toLocaleDateString("en-US").split("/")
-            //var day = new Date(2021, 1, 22);
-            //var day = Date.prototype.getDate();
-            //var maand = Date.prototype.getMonth();
-            //var jaar = Date.prototype.getFullYear();
-            //alert(toonDatum);
-    
+        function toonDatum() {
+            let geboortedatum = new Date('2021-01-22')
+            let dagDiv = document.getElementById("dag");
+            let maandDiv = document.getElementById("maand");
+            let jaarDiv = document.getElementById("jaar");
+
+            dagDiv.innerHTML = geboortedatum.getDate();
+            maandDiv.innerHTML = geboortedatum.getMonth() + 1;
+            jaarDiv.innerHTML = geboortedatum.getFullYear();
+
         }
 
-        window.addEventListener('DOMContentLoaded', toonDatum);
+        document.addEventListener("DOMContentLoaded", toonDatum)
     </script>
+    <style type="text/css">
+        body {
+            font-size: 30px;
+            color: pink;
+            background-color: #282828;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            display: inline;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="dag"></div>
-    <div id="maand"></div>
+    De huidige datum is:
+    <div id="dag"></div> -
+    <div id="maand"></div> -
     <div id="jaar"></div>
 </body>
+
 </html>
