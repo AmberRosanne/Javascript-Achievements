@@ -12,7 +12,7 @@
 
         // Dit is de start function. Roep deze aan als alles is geladen
         let start = () => {
-            alleBlokjes = document.querySelectorAll(".blokjes");
+            alleBlokjes = document.querySelectorAll(".blokjes div");
 
             button1 = document.getElementById("knop1");
             button1.addEventListener("click", maakRood);
@@ -23,21 +23,22 @@
         };
 
         let maakRood = () => {
+            console.log("hallo")
             for (let i = 0; i < alleBlokjes.length; i++) {
                 let ditBlokje = alleBlokjes[i];
-                ditBlokje.className = ".blokje--rood";
+                ditBlokje.className = "blokje--rood";
             }
         };
 
         let maakBlauw = () => {
             for (let i = 0; i < alleBlokjes.length; i++) {
                 let ditBlokje = alleBlokjes[i];
-                ditBlokje.className = ".blokje--blauw";
+                ditBlokje.className = "blokje--blauw";
             }
         };
 
         // Dit wordt uitgevoerd als de pagina helemaal geladen is
-        document.addEventListener("DOMContentLoaded", alleBlokjes );
+        document.addEventListener("DOMContentLoaded", start );
     </script>
 </head>
 
