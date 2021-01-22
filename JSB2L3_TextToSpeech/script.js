@@ -2,15 +2,11 @@
     let myText = document.getElementById('myText');
     let myImage = document.getElementById('myImage');
     let myButton = document.getElementById('myButton');
-    let myReset = document.getElementById('myReset');
 
     myButton.addEventListener('click', function(){
         main();
     })
 
-    myReset.addEventListener('click', function(){
-        /* hier komt jouw code */
-    })
 
     function main(){
          let dezeTextWordtHet = makeThisSentence();
