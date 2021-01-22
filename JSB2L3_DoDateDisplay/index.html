@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function toonDatum(){
+            let[01, 22, 2021] = new Date().toLocaleDateString("en-US").split("/")
+            //var day = new Date(2021, 1, 22);
+            //var day = Date.prototype.getDate();
+            //var maand = Date.prototype.getMonth();
+            //var jaar = Date.prototype.getFullYear();
+            //alert(toonDatum);
+    
+        }
+
+        window.addEventListener('DOMContentLoaded', toonDatum);
+    </script>
+</head>
+<body>
+    <div id="dag"></div>
+    <div id="maand"></div>
+    <div id="jaar"></div>
+</body>
+</html>
