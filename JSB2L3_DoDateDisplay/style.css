@@ -1,0 +1,10 @@
+body {
+    font-size: 30px;
+    color: pink;
+    background-color: #282828;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    display: inline;
+}
