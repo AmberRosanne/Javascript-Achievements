@@ -5,6 +5,7 @@ const quizWrapper = document.getElementById('quizWrapper');
 const questionBox = document.getElementById('questionBox');
 const resultBox = document.getElementById('resultBox');
 const quizTitle = document.getElementById('quizTitle');
+const restart = document.getElementById('restart');
 
 let counter = 0; // aantal mutliple choice vragen
 let quiz; // object met quiz vragen
@@ -13,9 +14,17 @@ let quizNummer = 1; // voorbereiden automatisch 2e quiz startem
 
 
 function init(){
+  restart.addEventListener('click', restartQuiz);
   quiz = quiz1; // kies de quiz
   //  quiz = quiz2; // kies de quiz
   initQuiz(); // start de quiz
+}
+
+function restartQuiz(){
+  quiz = quiz2;
+  restart.style.display = "none";
+  quizWrapper.style.background = "#282828"
+  initQuiz();
 }
 
 function initQuiz(){
@@ -83,6 +92,7 @@ function finishQuiz() {
   // afsluiting quiz geef feedback
   questionBox.style.display = "none";
   resultBox.style.display = "block";
+  restart.style.display = "block";
   quizWrapper.style.background = "pink";
   resultBox.innerHTML = "<h2>Jouw resultaat: <br>Goede antwoorden: " + playerData.goodAnswers + "<br>Foute antwoorden: " + playerData.wrongAnswers + "</h2>";
 }

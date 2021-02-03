@@ -79,3 +79,7 @@ body{
   animation-name: wrongAnswerAnimation;
   animation-duration: 2s;
 }
+
+#restart {
+  display: none;
+}
